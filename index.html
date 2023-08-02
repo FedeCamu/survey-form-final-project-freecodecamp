@@ -17,86 +17,101 @@
       </header>
 
       <form id="survey-form" class="survey-form">
-        <fieldset>
-          <label for="name" id="name-label"
-            >Name
-            </label>
-        <!-- </br> -->
+        <div class="form-group">
+          <label for="name" id="name-label">Name </label>
 
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
-        
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            class="text-input"
+          />
+        </div>
 
-          <label for="email" id="email-label"
-            >Email
-            </label>
+        <div class="form-group">
+          <label for="email" id="email-label">Email </label>
 
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your Email"
-              required
-            />
-          
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+            class="text-input"
+          />
+        </div>
 
-          <label for="age" id="number-label"
-            >Age (optional)
-            </label>
+        <div class="form-group">
+          <label for="age" id="number-label">Age (optional) </label>
 
-            <input type="number" id="age" placeholder="Age" min="16" max="99" />
-          
+          <input
+            type="number"
+            id="age"
+            placeholder="Age"
+            min="16"
+            max="99"
+            class="text-input"
+          />
+        </div>
 
+        <div class="form-group">
           <label for="role" id="role-label"
             >Which option best describes your current role?
-            </label>
-            <select id="role" name="role">
-              <option value="">(select current role)</option>
-              <option value="1">Student</option>
-              <option value="2">Full Time Job</option>
-              <option value="3">Full Time Lerner</option>
-              <option value="4">Prefer not to say</option>
-              <option value="5">Other</option>
-            </select>
-          
-        </fieldset>
-    </hr>
-        <fieldset>
+          </label>
+          <select id="role" name="role">
+            <option value="">(select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Lerner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
           <legend>Would you recommend freeCodeCamp to a friend?</legend>
           <label for="Definitely" class="radio-options"
-            ><input id="definitely" type="radio" name="reccomendation"/>
+            ><input id="definitely" type="radio" name="reccomendation" />
             Definitely</label
           >
-          <label for="Maybe"
+          <label for="Maybe" class="radio-options"
             ><input id="Maybe" type="radio" name="reccomendation" />
             Maybe</label
           >
-          <label for="Notsure"
+          <label for="Notsure" class="radio-options"
             ><input id="Notsure" type="radio" name="reccomendation" /> Not
             sure</label
           >
-
-          <label for="role" id="role-label"
+        </div>
+        <div class="form-group">
+          <label for="favorite" id="favorite-label"
             >What is your favorite feature of freeCodeCamp?
-            <select id="favorite" name="favorite">
-              <option value="">(select an option)</option>
-              <option value="1">Challenges</option>
-              <option value="2">Projects</option>
-              <option value="3">Community</option>
-              <option value="4">Open Source</option>
-            </select>
           </label>
+          <select id="favorite" name="favorite">
+            <option value="">(select an option)</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </div>
 
-          <p>What would you like to see improved? (Check all that apply)</p>
-          <label for="improvements" id="improvements-label">
+        <div class="form-group">
+          <legend>
+            What would you like to see improved?
+            <small>(Check all that apply)</small>
+          </legend>
+          <label
+            for="improvements"
+            id="improvements-label"
+            class="checkbox-input"
+          >
             <input
               id="improvements"
               type="checkbox"
               name="improvements"
               value="front-end-projects"
+              class="checkbox-input"
             />
             Front-end Projects</label
           >
@@ -106,6 +121,7 @@
               type="checkbox"
               name="improvements"
               value="back-end-projects"
+              class="checkbox-input"
             />
             Back-end Projects</label
           >
@@ -115,6 +131,7 @@
               type="checkbox"
               name="improvements"
               value="data-visualization"
+              class="checkbox-input"
             />
             Data Visualization</label
           >
@@ -125,6 +142,7 @@
               type="checkbox"
               name="improvements"
               value="challenges"
+              class="checkbox-input"
             />
             Challenges</label
           >
@@ -135,6 +153,7 @@
               type="checkbox"
               name="improvements"
               value="open-sourcs-community"
+              class="checkbox-input"
             />
             Open Source Community</label
           >
@@ -145,6 +164,7 @@
               type="checkbox"
               name="improvements"
               value="gitter-help-rooms"
+              class="checkbox-input"
             />
             Gitter help rooms</label
           >
@@ -154,6 +174,7 @@
               type="checkbox"
               name="improvements"
               value="videos"
+              class="checkbox-input"
             />
             Videos</label
           >
@@ -163,6 +184,7 @@
               type="checkbox"
               name="improvements"
               value="city-meetups"
+              class="checkbox-input"
             />
             City Meetups</label
           >
@@ -172,6 +194,7 @@
               type="checkbox"
               name="improvements"
               value="wiki"
+              class="checkbox-input"
             />
             Wiki</label
           >
@@ -181,6 +204,7 @@
               type="checkbox"
               name="improvements"
               value="forum"
+              class="checkbox-input"
             />
             Forum</label
           >
@@ -190,21 +214,20 @@
               type="checkbox"
               name="improvements"
               value="additional-courses"
+              class="checkbox-input"
             />
             Additional Courses</label
           >
+        </div>
 
-          <label for="suggestions"
-            >Any comments or suggestions?
-            <textarea
-              id="sugegstions"
-              name="suggestions"
-              rows="3"
-              cols="30"
-              placeholder="Enter your comment here..."
-            ></textarea>
-          </label>
-        </fieldset>
+        <div class="form-group">
+          <label for="suggestions">Any comments or suggestions? </label>
+          <textarea
+            id="sugegstions"
+            name="suggestions"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
 
         <button type="submit" id="submit">Submit</button>
       </form>
