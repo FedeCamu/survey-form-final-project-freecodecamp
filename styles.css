@@ -1,0 +1,83 @@
+body {
+  background-image: linear-gradient(
+      180deg,
+      rgba(1, 91, 101, 0.9) 42%,
+      rgba(41, 177, 166, 0.9) 100%
+    ),
+    url(https://lh3.googleusercontent.com/Dt0tdK81sDWZv6FG4REbCGgaRVPyK9pzbWsvH4LVqO8v69nVhtsz5Dtln6Why0ON0aSyEtQyR_6RpwnKLs6WNW_X69FkuzvCVCiKOmtTIHo0xew4tld5NzUBtLQR9-aG2HDOhcE1nFBDcjXICUeNkjJWhgNuOFngwpMd6AUni1EVTOKS6KtpwOV-Iu8cPQ);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  margin: 20px auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: white;
+  display: block;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#description {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.survey-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+select {
+  display: block;
+  margin-bottom: 20px;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
